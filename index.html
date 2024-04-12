@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
-    <form class="calculator">
+    <div class="calculator">
         <div class="display">
-            <input type="text" id="buttons">
-                <select name="" id="muvelet">
-                    <option value="osszeadas">+</option>
-                    <option value="kivonás">-</option>
-                    <option value="szorzás">*</option>
-                    <option value="osztás">/</option>
-                </select>
-                <input type="text" id="szam2">
+            <input type="number" id="szam1">
+            <select name="" id="muvelet">
+                <option value="osszeadas">+</option>
+                <option value="kivonás">-</option>
+                <option value="szorzás">*</option>
+                <option value="osztás">/</option>
+            </select>
+            <input type="number" id="szam2">
         </div>
         <div class="buttons">
-            <button class="buttons button" py-click="torol">C</button>
-            <button class="buttons button" py-click="szamit">=</button>
+            <button type="button" py-click="torol">C</button>
+            <button type="button" py-click="szamit">=</button>
         </div>
         <div class="result">
             <p id="result-number">0</p>
         </div>
-    </form>
+    </div>
 
     <py-script src="main.py"></py-script>
 </body>
